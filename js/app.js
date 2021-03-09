@@ -13,19 +13,12 @@ var Game = new Vue({
 			window.location.reload();
 		},
 		// 继续游戏
-		/* pause() { // 暂停
-			this.start = false;
-			// 结算界面不显示
-			this.$refs.end.style.display = "block";
-			// 数据界面不显示
-			this.$refs.hit.style.display = "none";
-			})
-		} */
 		refresh(){
 			// 结算界面不显示
 			this.$refs.end.style.display = "none";
 			// 显示实时数据。
 			this.$refs.hit.style.display = "block";
+			// 初始化所有定时器
 			this.init();
 		},
 		//  初始化页面
