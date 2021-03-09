@@ -22,7 +22,10 @@ var Game = new Vue({
 			})
 		} */
 		refresh(){
+			// 结算界面不显示
 			this.$refs.end.style.display = "none";
+			// 显示实时数据。
+			this.$refs.hit.style.display = "block";
 			this.init();
 		},
 		//  初始化页面
