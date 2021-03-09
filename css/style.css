@@ -53,7 +53,7 @@ main .game-plane img { position: absolute; }
 	justify-content: center;
 }
 
-.alert .content .left * { margin: 5px 0; }
+.alert .content .left * { margin: 5px 5px; }
 
 .alert .content .right {
 	display: flex;
@@ -79,3 +79,14 @@ main .game-plane img { position: absolute; }
 	left: 20px;
 	color: #FFF;
 }
+
+.end {
+	position:absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+
