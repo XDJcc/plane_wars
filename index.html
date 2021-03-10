@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -9,7 +9,7 @@
 
 <body>
 	<main>
-		<!-- 界面展示栏 -->
+		<!-- 游戏界面 -->
 		<div class="game-plane" @mousemove="touchmove" :style="{backgroundPosition:'0px '+ positionY +'px'}" ref='plane'>
 			<div id="hit" ref="hit">
 				<h2>击毁：{{ hitCount }}</h2>
@@ -46,8 +46,6 @@
 					</div>
 					<div class="right">
 						<input type="submit" @click="myrefresh" value="新游戏">
-						<input type="submit" @click="refresh" value="继续游戏">
-						
 					</div>
 				</div>
 			</div>
@@ -73,10 +71,10 @@
 	<script src="js/data.js"></script>
 	<script src="js/app.js"></script>
 	<script type="text/javascript">
-		const a = document.querySelector('.right')
+		/* 	const a = document.querySelector('.right')
 		window.onkeydown = function (event) {
 			console.log(event.keyCode)
-		}
+		} */
 	</script>
 </body>
 
